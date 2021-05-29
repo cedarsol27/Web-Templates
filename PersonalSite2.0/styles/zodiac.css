@@ -1,0 +1,279 @@
+/* Zodiac Motion
+///////////////////////////////////////////////////////////////*/
+
+@font-face {
+    font-family: 'Astrology';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/AstronomicSignsSt-YLYO.ttf');
+}
+.sign {
+  font-family: 'Astrology';
+  font-size: 24px;
+  margin-left: 1em;
+}
+
+.motion {
+    font-family: 'Astrology';
+    background: url('../images/blank_astrology_wheel1.png') no-repeat center;   
+    height: 30em;
+    position: relative;
+    width: 30em;
+    font-size: 20px;
+    font-family: 'Astrology';
+    zoom: 150%;
+    margin: auto;
+    padding: auto;
+  }
+
+  .moon-container, .mercury-container, 
+  .venus-container, .mars-container, 
+  .jupiter-container, .saturn-container, 
+  .uranus-container, .neptune-container, 
+  .pluto-container, .earth-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .pluto {
+    right: 81%;
+    position: absolute;
+    top: 47%;
+    color: darkred;
+  }
+
+  .neptune {
+    right: 78%;
+    position: absolute;
+    top: 47%;
+    color: lightblue;
+  }
+
+  .uranus {
+    right: 75%;
+    position: absolute;
+    top: 47%;
+    color: gold;
+  }
+
+  .saturn {
+    right: 72%;
+    position: absolute;
+    top: 47%;
+    color: brown;
+  }
+
+  .jupiter {
+    right: 69%;
+    position: absolute;
+    top: 47%;
+    color: purple;
+  }
+
+  .mars {
+    right: 62%; 
+    position: absolute;
+    top: 47%;
+    color: red;
+  }
+
+  .moon {
+    position: absolute;
+    top: 65%;
+    left: 100%;
+    font-size: 20px;
+    color: yellow;
+  }
+
+  .earth {
+    right: 58%; 
+    position: absolute;
+    top: 47%;
+    color: green;
+  }
+
+  .venus {
+    right: 55%;
+    position: absolute;
+    top: 47%;
+    color: pink;
+  }
+
+  .mercury {
+    right: 52%; 
+    position: absolute;
+    top: 47%;
+    color: orange;
+  }
+
+  .sun {
+    left: 48%; 
+    position: absolute;
+    top: 47%;
+    color: black;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotateZ(-360deg);
+    }
+  } 
+  
+  .pluto-container {
+    animation: rotate 9056s infinite linear;
+  }
+  .neptune-container {
+    animation: rotate 6018.2s infinite linear;
+  }
+  .uranus-container {
+    animation: rotate 3068.85s infinite linear;
+  }
+  .saturn-container {
+    animation: rotate 1075.922s infinite linear;
+}
+  .jupiter-container {
+    animation: rotate 432.259s infinite linear;
+}
+  .mars-container {
+    animation: rotate 68.6971s infinite linear;
+  }
+  .moon-container {
+    animation: rotate 2.7322s infinite linear;
+  }
+  .earth-container {
+      animation: rotate 36.525s infinite linear;
+  } 
+  .venus-container {
+    animation: rotate 22.4701s infinite linear;
+  }
+  .mercury-container {
+    animation: rotate 8.7969s infinite linear;
+  } 
+
+  @media screen and (min-width: 280px) and (max-width: 799px) {
+    .motion {
+        height: 30em;
+        position: relative;
+        width: 30em;
+        font-size: 20px;
+        font-family: 'Astrology';
+        zoom: 58%;
+        margin: auto;
+        padding: auto;
+      }
+  }
+
+  /* Astro Symbols
+///////////////////////////////////////////////////
+*/
+
+@font-face {
+  font-family: 'Wingding';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/wingding_0.ttf');
+}
+
+#zodiac {
+  text-align: center;
+}
+
+.zodiac {
+  /* Doesn't currently work on Firefox */
+  text-align: center;
+  border-radius: 30px;
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+  display: inline-block;
+  border: 10px #145DA0 solid;
+  animation: oscillate 2.5s ease-in-out infinite;
+  background: #861a1a;
+  color: orange;
+  line-height: 2;
+  font-size: 20px;
+  font-family: 'Wingding';
+}
+
+@keyframes oscillate {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(100px);}
+}
+
+#z0{
+  animation-delay: .1s;
+}
+#z1{
+  animation-delay: .2s;
+}
+
+#z2{
+  animation-delay: .3s;
+}
+
+#z3{
+  animation-delay: .4s;
+}
+
+#z4{
+  animation-delay: .5s;
+}
+#z5{
+  animation-delay: .6s;
+}
+#z6{
+  animation-delay: .7s;
+}
+#z7{
+  animation-delay: .8s;
+}
+#z8{
+  animation-delay: .9s;
+}
+#z9{
+  animation-delay: 1s;
+}
+#z10{
+  animation-delay: 1.1s;
+}
+#z11{
+  animation-delay: 1.2s;
+}
+/* Small Mobile Screen */
+@media screen and (min-width: 260px) and (max-width: 320px) {
+  .zodiac {
+      font-family: 'Wingding';
+      font-size: 7px;
+      height: 8px;
+      width: 8px;
+      line-height: 1.2;
+      border: 3px #145DA0 solid;
+  }
+}
+
+/* Medium Mobile Screen */
+@media screen and (min-width: 321px) and (max-width: 500px) {
+  .zodiac {
+      font-family: 'Wingding';
+      font-size: 10px;
+      height: 12px;
+      width: 12px;
+      line-height: 1.2;
+      border: 4px #145DA0 solid;
+  }
+}
+
+/* Large Mobile Screen */
+@media screen and (min-width: 501px) and (max-width: 810px) {
+  .zodiac {
+      font-family: 'Wingding';
+      font-size: 15px;
+      height: 25px;
+      width: 25px;
+      line-height: 1.5;
+      border: 6px #145DA0 solid;
+  }
+}

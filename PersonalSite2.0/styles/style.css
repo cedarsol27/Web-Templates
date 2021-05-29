@@ -1,0 +1,187 @@
+    /* reset browser styles */
+    html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+    }
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1.2;
+    }
+    ol { 
+        padding-left: 1.4em;
+        list-style: decimal;
+    }
+    ul {
+        padding-left: 1.4em;
+        list-style: square;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    } 
+    /* end reset browser styles */
+    .arrow-down {
+        width: 0; 
+        height: 0;
+        margin: 0 auto;
+        border-left: 725px solid transparent;
+        border-right: 725px solid transparent;
+        border-top: 100px solid #f00;
+        background-color: black;
+        opacity: 90%;
+
+    }
+    nav {
+        height: 150px;
+    }
+    .btn-nav {
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        background-color: #30336b;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 2em;
+        text-align: center;
+        line-height: 4rem;
+        box-shadow: 0 0 1rem rgba(0,0,0,.2);
+        z-index: 100;
+    }
+    .nav {
+        background-color: #130f40;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        z-index: 10;
+    }
+    .nav-list {
+        font-size: 1.6em;
+        list-style: none;
+    }
+    .nav-items {
+        color: #45499e;
+        padding: .5rem 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        transition: all 1s cubic-bezier(.75,-0.35,.11,1.28);
+        transform: translateY(-100vh) scale(4);
+    }
+    .nav-items::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        transition: all .5s;
+        transform: translateX(-102%);
+        z-index: -1;
+    }
+    .nav-items:hover::after {
+        transform: translateX(0);
+    }
+    .nav-open {
+        transition: height 1s cubic-bezier(0.77,0,0.175,1);
+        height: 100%;
+    }
+    .nav-close {
+        transition: height .6s .8s cubic-bezier(0.77,0,0.175,1);
+        height: 0;
+    }
+    .btn {
+        background-color: #fff;
+    }
+    .btn a {
+        text-decoration: none;
+        color: red;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .btn i {
+        margin-right: .5rem;
+    }
+    .popup {
+        width: 17rem;
+        padding: 1rem;
+        border-radius: 4px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        border: 1px solid red;
+    }
+    .section {
+        height: 700px;
+        margin: 0 auto;
+    }
+    .home-img {
+        size: 50%;
+    }
+    h3 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .odd {
+        color: white;
+    }
+    .even {
+        color: black;
+    }
+    .title {
+        padding-top: 10em;
+        width: 400px;
+        margin: 0 auto;
+        
+    }
+    .title h3 {
+        border-radius: 40px;
+    }
+    .odd h3{
+        border: 5px solid white;
+    }
+    .even h3{
+        border: 5px solid black;
+    }
+    .img-one {
+        background-color: black;
+        opacity: 90%;
+    }
+    .img-two {
+        background-color: whitesmoke;
+        opacity: 90%;
+    }
+    .img-three {
+        background-color: black;
+        opacity: 90%;
+    }
+    .img-four {
+        background-color: whitesmoke;
+        opacity: 90%;
+    }
+    footer {
+        text-align: center;
+        padding: 1em 0;
+        background-color: black;
+        color: white;
+    }
+    
